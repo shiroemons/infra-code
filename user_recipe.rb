@@ -1,6 +1,6 @@
 require 'dotenv/load'
 
-USER_NAME = "shiroemons"
+USER_NAME = ENV['USER_NAME']
 SSH_KEY   = ENV['SSH_KEY']
 WHEEL_GID = "10"
 
