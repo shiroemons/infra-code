@@ -43,6 +43,26 @@ SSH_KEY="ssh-rsa AAAA..."
 
 ## Itamae実行
 
+- アップデート
+
+```bash
+bundle exec itamae ssh update_recipe.rb -h [IPアドレス] -u root
 ```
-$ bundle exec itamae ssh user_recipe.rb -h [IPアドレス] -u root
+
+- ユーザー作成
+
+```bash
+bundle exec itamae ssh user_recipe.rb -h [IPアドレス] -u root
+```
+
+- production
+
+```bash
+bundle exec itamae ssh nodes/web-production.yml -h [IPアドレス] -u root
+```
+
+- sshd設定(rootログイン禁止)
+
+```bash
+bundle exec itamae ssh sshd_recipe.rb -h [IPアドレス] -u root
 ```
